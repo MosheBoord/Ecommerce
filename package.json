@@ -1,0 +1,24 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "A simple ECommerce site.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MosheBoord/ECommerce.git"
+  },
+  "author": "Moshe Boord",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MosheBoord/ECommerce/issues"
+  },
+  "homepage": "https://github.com/MosheBoord/ECommerce#readme",
+  "devDependencies": {
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
