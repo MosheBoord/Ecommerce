@@ -7,5 +7,30 @@ module.exports = {
 		filename: "main.bundle.js",
 	},
 	mode: "development",
-	devtool: "source-map",
+	devtool: "inline-source-map",
+	module: {
+		rules: [
+			{
+				test: /\.(js)$/,
+				exclude: /node_modules/,
+				use: ["babel-loader"],
+			},
+			{
+				test: /\.css$/,
+				use: [
+					{
+						loader: "style-loader",
+					},
+					{
+						loader: "css-loader",
+						options: {
+							modules: true,
+							localsConvention: "camelCase",
+							sourceMap: true,
+						},
+					},
+				],
+			},
+		],
+	},
 };
